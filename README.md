@@ -10,6 +10,8 @@ Using the ***Wireshark program***, I conducted a detailed monitoring and analysi
 >> <table><tr><td> icmp_Win32_API + DestinationIP (such as icmp_Win32_API 1.1.1.1) </td></tr></table>
 
 (( To compile: g++ *.cpp -o icmp_Win32_API.exe -lws2_32 -fPIC -static -static-libgcc -static-libstdc++ C:\Windows\System32\iphlpapi.dll ))
+<img src="https://github.com/yektaparlak/ICMP-Packet-Watcher/blob/main/Other/gif_file_of_icmp_Win32_API.gif" width="800"/>
+
 
 <br>
 
@@ -17,7 +19,7 @@ Using the ***Wireshark program***, I conducted a detailed monitoring and analysi
 >> <table><tr><td> icmp_RawSocket + DestinationIP  (such as icmp_RawSocket 1.1.1.1) </td></tr></table>
 
 (( To compile: g++ *.cpp -o icmp_RawSocket.exe -lws2_32 -fPIC -static -static-libgcc -static-libstdc++ ))
-
+<img src="https://github.com/yektaparlak/ICMP-Packet-Watcher/blob/main/Other/gif_file_of_icmp_RawSocket.gif" width="800"/>
 <br>
 
 ## About the Problem 
