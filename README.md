@@ -6,7 +6,7 @@ Using the ***Wireshark program***, I conducted a detailed monitoring and analysi
 <br>
 <br>
 
->### To run via CMD for "icmp_Win32_API" 
+>### To run via CMD for "icmp_Win32_API.exe" 
 >> <table><tr><td> icmp_Win32_API + DestinationIP (such as icmp_Win32_API 1.1.1.1) </td></tr></table>
 
 --> To compile: g++ *.cpp -o icmp_Win32_API.exe -lws2_32 -fPIC -static -static-libgcc -static-libstdc++ C:\Windows\System32\iphlpapi.dll
@@ -15,7 +15,7 @@ Using the ***Wireshark program***, I conducted a detailed monitoring and analysi
 
 <br>
 
->### To run via CMD for "icmp_RawSocket"
+>### To run via CMD for "icmp_RawSocket.exe"
 >> <table><tr><td> icmp_RawSocket + DestinationIP  (such as icmp_RawSocket 1.1.1.1) </td></tr></table>
 
 --> To compile: g++ *.cpp -o icmp_RawSocket.exe -lws2_32 -fPIC -static -static-libgcc -static-libstdc++
