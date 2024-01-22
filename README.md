@@ -88,10 +88,10 @@ In order to carried out the analysis, there were two types of sockets used to ge
  - The first method was to use a predefined protocol in the IP header, such as Win32 API approach.
  - The second method was to use a custom protocol in the IP header. Raw sockets provide the ability to manage down-level transports namely Raw Socket Approach.
 
-### I. Raw Socket Approach (for Linux Platform)
- > <img width="400" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/a93049ec-df80-4363-b276-88c768ea6d74">
+## I. Raw Socket Approach (for Linux Platform)
+ > <img width="430" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/a93049ec-df80-4363-b276-88c768ea6d74">
   
-***Steps:***
+### *****Steps:***** 
 1. Define the ICMP header structure
 2. Checksum calculation of ICMP packet
 3. Create an original socket with a protocol type of IPPROTO_ICMP, set the properties of the socket.
@@ -99,13 +99,25 @@ In order to carried out the analysis, there were two types of sockets used to ge
 5. Call the sendto function to send an ICMP request to the remote host.
 6. Call the recvfrom function to receive the ICMP response.
 
+
+### Program Code Input View
+<img width="460" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/53863f29-3a16-4380-9fc5-4872921328a1">
+
+
+### Program Code Output View (Successful Connection)
+<img width="458" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/baa30b0f-832c-4760-9e5a-33ed2b6ab073">
+
+### Program Code Output View (Failed Connection)
+<img width="453" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/80c605ff-c429-48a5-a6e4-04728778ff08">
+
+<br>
 <br>
 
-### II. Win32 API Approach (for Windows Platform)
-> <img width="400" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/65f13121-d501-45a7-8fb3-c7fa2575cb65">
+## II. Win32 API Approach (for Windows Platform)
+> <img width="430" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/65f13121-d501-45a7-8fb3-c7fa2575cb65">
 
 
-***Steps:***
+### *****Steps:***** 
 1. Use the function IcmpCreateFile to create an Icmp handle.
 2. Construct the API parameters. (IcmpHandle, ipaddr, SendData, sizeof(SendData), &ipOptions, ReplyBuffer, ReplySize, Timeout)
 3. Call the function IcmpSendEcho to send.
@@ -114,3 +126,15 @@ In order to carried out the analysis, there were two types of sockets used to ge
     1. IcmpCreateFile();  => Opens a handle on which IPv4 ICMP echo requests can be issued.
     2. IcmpSendEcho();    => Sends an IPv4 ICMP echo request and returns any echo response replies and the call returns when the time-out has expired or the reply buffer is filled.
     3. IcmpCloseHandle(); => Closes a handle opened by a call to the IcmpCreateFile or  IcmpCreateFile functions.
+
+### Program Code Input View
+<img width="460" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/f713925b-f6a3-4afc-b1de-395707f9d36c">
+
+
+### Program Code Output View (Successful Connection)
+<img width="461" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/eb2d4f4b-2330-4878-aff5-5bf9a8c4de8b">
+
+
+### Program Code Output View (Failed Connection)
+<img width="449" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/1ab32ee0-b00d-498d-9c13-20cda41729f8">
+
