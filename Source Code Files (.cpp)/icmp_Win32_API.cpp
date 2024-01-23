@@ -13,6 +13,8 @@
  /* To compile: g++ *.cpp -o pingapi.exe -lws2_32 -fPIC -static -static-libgcc -static-libstdc++ C:\Windows\System32\iphlpapi.dll
     and then enter: ./pingapi DestinationIP (such as ./pingapi 1.1.1.1) */
 
+#define _WINSOCK_DEPRECATED_NO_WARNINGS //to suppress "inet_addr" deprecation warnings
+
 #include <winsock2.h>
 #include <iphlpapi.h>                                                                                   // IP helper function library: <<<< https://docs.microsoft.com/en-us/windows/win32/iphlp/ip-helper-functions?redirectedfrom=MSDN >>>>
 #include <icmpapi.h>
