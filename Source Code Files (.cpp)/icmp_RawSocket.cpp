@@ -12,6 +12,9 @@
 /* To compile: g++ *.cpp -o pingraw.exe -lws2_32 -fPIC -static -static-libgcc -static-libstdc++
    To run: ./pingraw + IP adress  (for instance ./pingraw 1.1.1.1) */
 
+#define _CRT_SECURE_NO_WARNINGS
+#define _WINSOCK_DEPRECATED_NO_WARNINGS 
+
 #include <stdio.h>
 #include <Ws2tcpip.h>
 #include <Winsock2.h>
