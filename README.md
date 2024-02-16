@@ -5,13 +5,52 @@ Using the ***Wireshark program***, I conducted a detailed monitoring and analysi
 
 <br>
 
-**#### Win32 API Aproach Code Has been Updated:**
+------------------------------------------------------------
 
- - `Error Handling Enhancements:` Expanded the error handling to cover more scenarios and provide detailed messages to the user.
-  
- - `Function Decomposition:` Braked down some parts of the main function into smaller functions for better readability and maintainability.
-  
- - `User Interface Improvements:` Enhanced the user interface by providing more interactive options and feedback.
+<br>
+
+### **Win32 API Aproach Code Has been Updated**:
+
+<br>
+
+#### Purpose of the changes: 
+_The changes outlined in this document aim to improve the robustness, clarity, and user experience of the ICMP Ping Tool codebase._
+
+
+<br>
+
+1. **User Interaction Enhancement**:
+   - Incorporated prompts for user input to facilitate selection between unlimited pings or manual ping count and to specify the time interval in milliseconds.
+   - Added functionality to accept user input character 't' or 'm' to determine ping count selection method.
+     
+2. **Header Inclusion**:
+   - Included `#include <WS2tcpip.h>` to ensure required Winsock header files are included for Winsock programming.
+
+3. **Error Handling Functions**:
+   - Added function declarations for `HandleICMPStatus` and `HandleICMPSendEchoError` to manage ICMP response status codes and errors.
+
+4. **Enhanced Error Handling**:
+   - Defined `HandleICMPStatus` and `HandleICMPSendEchoError` functions to handle different ICMP response status codes and errors returned by `IcmpSendEcho`.
+
+5. **Code Structure Improvement**:
+   - Rearranged code segments for better readability, maintainability, and logical flow.
+
+6. **Improved Commenting**:
+   - Maintained and improved existing comments to explain the purpose and functionality of code blocks and functions.
+
+7. **Documented Functionality**:
+   - Documented the functionality of `IcmpCreateFile`, `IcmpCloseHandle`, and `IcmpSendEcho` functions.
+
+8. **Dynamic Ping Count Feature**:
+   - Introduced functionality to allow dynamic selection of ping count, enabling users to choose between unlimited pings or specify the number of pings manually.
+
+9. **Comprehensive Status Code Handling**:
+   - Expanded code logic to handle a variety of ICMP response status codes and provide descriptive messages for each status encountered.
+
+<br>
+
+-----------------------------------------------
+
   
 <br>
 <br>
