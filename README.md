@@ -4,6 +4,17 @@ Featuring distinct tailoring for Windows (via Win32 API Approach) and Linux (via
 Using the ***Wireshark program***, I conducted a detailed monitoring and analysis of ICMP packet information. It can be found the corresponding analysis details in the report I authored, beginning from page 10.
 
 <br>
+
+**#### Win32 API Aproach Code Has been Updated:**
+
+ - `Error Handling Enhancements:` Expanded the error handling to cover more scenarios and provide detailed messages to the user.
+  
+ - `Function Decomposition:` Braked down some parts of the main function into smaller functions for better readability and maintainability.
+  
+ - `User Interface Improvements:` Enhanced the user interface by providing more interactive options and feedback.
+  
+<br>
+<br>
 <br>
 
 >### To run via CMD for "icmp_Win32_API.exe" 
