@@ -25,16 +25,16 @@ _The changes outlined in this document aim to improve the robustness, clarity, a
       <img width="420" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/7df29374-30b9-4283-8935-cc653ee0d7ac">
 
 
-**3. Error Handling Functions**:
+**2. Error Handling Functions**:
    - Declared and defined functions HandleICMPStatus and HandleICMPSendEchoError to manage ICMP response status codes and errors returned by IcmpSendEcho.
 
-**4. Code Structure Improvement**:
+**3. Code Structure Improvement**:
    - Rearranged code segments for better readability, maintainability, and logical flow.
 
-**5. Improved Commenting**:
+**4. Improved Commenting**:
    - Maintained and improved existing comments to explain the purpose and functionality of code blocks and functions.
 
-**6. Documented Functionality**:
+**5. Documented Functionality**:
    - Documented the functionality of `IcmpCreateFile`, `IcmpCloseHandle`, and `IcmpSendEcho` functions.
 
 <br>
