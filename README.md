@@ -19,19 +19,22 @@ _The changes outlined in this document aim to improve the robustness, clarity, a
 
 <br>
 
-1. **Dynamic Ping Count Feature**:
+**1. Dynamic Ping Count Feature**:
    - Introduced functionality to allow dynamic selection of ping count, enabling users to choose between unlimited pings or specify the number of pings manually by accepting user input character 't' for unlimited pings or 'm' for manual count selection.
+  
+      <img width="420" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/7df29374-30b9-4283-8935-cc653ee0d7ac">
 
-2. **Error Handling Functions**:
+
+**3. Error Handling Functions**:
    - Declared and defined functions HandleICMPStatus and HandleICMPSendEchoError to manage ICMP response status codes and errors returned by IcmpSendEcho.
 
-3. **Code Structure Improvement**:
+**4. Code Structure Improvement**:
    - Rearranged code segments for better readability, maintainability, and logical flow.
 
-4. **Improved Commenting**:
+**5. Improved Commenting**:
    - Maintained and improved existing comments to explain the purpose and functionality of code blocks and functions.
 
-5. **Documented Functionality**:
+**6. Documented Functionality**:
    - Documented the functionality of `IcmpCreateFile`, `IcmpCloseHandle`, and `IcmpSendEcho` functions.
 
 <br>
