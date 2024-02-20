@@ -1,12 +1,12 @@
 # ICMP-Packet-Watcher
-Featuring distinct tailoring for Windows (via Win32 API Approach) and Linux (via Raw Socket Approach), ICMP Packet Watcher is a network monitoring tool developed during an Aselsan internship in September 2022.
+Featuring distinct tailoring for Windows (via Winsock API Approach) and Linux (via Raw Socket Approach), ICMP Packet Watcher is a network monitoring tool developed during an Aselsan internship in September 2022.
 
 Using the ***Wireshark program***, I conducted a detailed monitoring and analysis of ICMP packet information. It can be found the corresponding analysis details in the report I authored, beginning from page 10.
 <br>
 
 
 
-## _**<ins> Win32 API Aproach Code Has Been Updated**: </ins>_
+## _**<ins> Winsock API Aproach Code Has Been Updated**: </ins>_
 
 **1. Dynamic Ping Count Feature**:
    - Introduced functionality to allow dynamic selection of ping count, enabling users to choose between unlimited pings or specify the number of pings manually by accepting user input character 't' for unlimited pings or 'm' for manual count selection.
@@ -33,8 +33,8 @@ Using the ***Wireshark program***, I conducted a detailed monitoring and analysi
 <br>
 <br>
 
->### To run via CMD for "icmp_Win32_API.exe" 
->> <table><tr><td> icmp_Win32_API + DestinationIP (such as icmp_Win32_API 8.8.8.8) </td></tr></table>
+>### To run via CMD for "icmp_Winsock_API.exe" 
+>> <table><tr><td> icmp_Winsock_API + DestinationIP (such as icmp_Winsock_API 8.8.8.8) </td></tr></table>
 
 <img src="https://github.com/yektaparlak/ICMP-Packet-Watcher/blob/main/gif_file_2.gif" width="800"/>
 
@@ -100,11 +100,11 @@ The ICMP protocol provides communication via Echo Request & Echo Reply, also kno
 
 ## Comparison of Networking Approaches
 
-| Feature                                | Raw Socket Approach (Linux)                           | Win32 API Approach (Windows)                        |
+| Feature                                | Raw Socket Approach (Linux)                           | Winsock API Approach (Windows)                        |
 | -------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
 | **Target Platform**                    | Designed for Linux-based systems                      | Designed for Windows-based systems                 |
-| **Implementation Method**              | Utilizes the raw socket interface in the Linux kernel | Utilizes the Win32 API, specifically Winsock and Iphlpapi libraries |
-| **Flexibility**                        | Provides granular control, allowing for extensive customization at the network level | Offers a high degree of flexibility through the comprehensive Win32 API |
+| **Implementation Method**              | Utilizes the raw socket interface in the Linux kernel | Utilizes the Winsock API, specifically Winsock and Iphlpapi libraries |
+| **Flexibility**                        | Provides granular control, allowing for extensive customization at the network level | Offers a high degree of flexibility through the comprehensive Winsock API |
 | **Ease of Use**                        | Best suited for users with in-depth knowledge of networking protocols | Provides a user-friendly development experience in Windows-centric environments |
 | **Networking Features**                | Facilitates detailed control over packet construction, ideal for complex networking scenarios | Leverages Windows-specific networking features and utilities, enhancing overall functionality |
 
@@ -112,7 +112,7 @@ The ICMP protocol provides communication via Echo Request & Echo Reply, also kno
 
 ## Approach Analysis
 In order to carried out the analysis, there were two types of sockets used to get more sophistication and practise.
- - The first method was to use a predefined protocol in the IP header, such as Win32 API approach.
+ - The first method was to use a predefined protocol in the IP header, such as Winsock API approach.
  - The second method was to use a custom protocol in the IP header. Raw sockets provide the ability to manage down-level transports namely Raw Socket Approach.
 
 ## I. Raw Socket Approach (for Linux Platform)
@@ -140,7 +140,7 @@ In order to carried out the analysis, there were two types of sockets used to ge
 <br>
 <br>
 
-## II. Win32 API Approach (for Windows Platform)
+## II. Winsock API Approach (for Windows Platform)
 > <img width="430" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/65f13121-d501-45a7-8fb3-c7fa2575cb65">
 
 
