@@ -4,13 +4,9 @@ Featuring distinct tailoring for Windows (via Win32 API Approach) and Linux (via
 Using the ***Wireshark program***, I conducted a detailed monitoring and analysis of ICMP packet information. It can be found the corresponding analysis details in the report I authored, beginning from page 10.
 <br>
 
------------------------------------------------------------
 
-<br>
 
-## **<ins> Win32 API Aproach Code Has Been Updated**: </ins>
-
-<br>
+## _**<ins> Win32 API Aproach Code Has Been Updated**: </ins>_
 
 **1. Dynamic Ping Count Feature**:
    - Introduced functionality to allow dynamic selection of ping count, enabling users to choose between unlimited pings or specify the number of pings manually by accepting user input character 't' for unlimited pings or 'm' for manual count selection.
