@@ -2,20 +2,13 @@
 Featuring distinct tailoring for Windows (via Win32 API Approach) and Linux (via Raw Socket Approach), ICMP Packet Watcher is a network monitoring tool developed during an Aselsan internship in September 2022.
 
 Using the ***Wireshark program***, I conducted a detailed monitoring and analysis of ICMP packet information. It can be found the corresponding analysis details in the report I authored, beginning from page 10.
+<br>
+
+-----------------------------------------------------------
 
 <br>
 
-------------------------------------------------------------
-
-<br>
-
-### **Win32 API Aproach Code Has been Updated**:
-
-<br>
-
-#### Purpose of the changes: 
-_The changes outlined in this document aim to improve the robustness, clarity, and user experience of the ICMP Ping Tool codebase._
-
+## **<ins> Win32 API Aproach Code Has Been Updated**: </ins>
 
 <br>
 
@@ -40,25 +33,21 @@ _The changes outlined in this document aim to improve the robustness, clarity, a
 <br>
 
 -----------------------------------------------
-
   
-<br>
 <br>
 <br>
 
 >### To run via CMD for "icmp_Win32_API.exe" 
->> <table><tr><td> icmp_Win32_API + DestinationIP (such as icmp_Win32_API 1.1.1.1) </td></tr></table>
+>> <table><tr><td> icmp_Win32_API + DestinationIP (such as icmp_Win32_API 8.8.8.8) </td></tr></table>
 
---> To compile: g++ *.cpp -o icmp_Win32_API.exe -lws2_32 -fPIC -static -static-libgcc -static-libstdc++ C:\Windows\System32\iphlpapi.dll
 <img src="https://github.com/yektaparlak/ICMP-Packet-Watcher/blob/main/gif_file_2.gif" width="800"/>
 
 
 <br>
 
 >### To run via CMD for "icmp_RawSocket.exe"
->> <table><tr><td> icmp_RawSocket + DestinationIP  (such as icmp_RawSocket 1.1.1.1) </td></tr></table>
+>> <table><tr><td> icmp_RawSocket + DestinationIP  (such as icmp_RawSocket 8.8.8.8) </td></tr></table>
 
---> To compile: g++ *.cpp -o icmp_RawSocket.exe -lws2_32 -fPIC -static -static-libgcc -static-libstdc++
 <img src="https://github.com/yektaparlak/ICMP-Packet-Watcher/blob/main/gif_file_1.gif" width="800"/>
 <br>
 
