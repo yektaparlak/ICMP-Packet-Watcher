@@ -5,26 +5,27 @@ Using the ***Wireshark program***, I conducted a detailed monitoring and analysi
 <br>
 
 
-
-## _**<ins> Winsock API Aproach Code Has Been Updated**: </ins>_
-
-- [x] **1. Dynamic Ping Count Feature**:
-   - Introduced functionality to allow dynamic selection of ping count, enabling users to choose between unlimited pings or specify the number of pings manually by accepting user input character 't' for unlimited pings or 'm' for manual count selection.
-  
-      <img width="420" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/7df29374-30b9-4283-8935-cc653ee0d7ac">
-
-
-- [x] **2. Error Handling Functions**:
-   - Declared and defined functions HandleICMPStatus and HandleICMPSendEchoError to manage ICMP response status codes and errors returned by IcmpSendEcho.
-
-- [x] **3. Code Structure Improvement**:
-   - Rearranged code segments for better readability, maintainability, and logical flow.
-
-- [x] **4. Improved Commenting**:
-   - Maintained and improved existing comments to explain the purpose and functionality of code blocks and functions.
-
-- [x] **5. Documented Functionality**:
-   - Documented the functionality of `IcmpCreateFile`, `IcmpCloseHandle`, and `IcmpSendEcho` functions.
+> [!NOTE]
+> ## _**<ins> Winsock API Aproach Code Has Been Updated**: </ins>_
+>
+> 
+>  **1. Dynamic Ping Count Feature**:
+>   - Introduced functionality to allow dynamic selection of ping count, enabling users to choose between unlimited pings or specify the number of pings manually by accepting >user input character 't' for unlimited pings or 'm' for manual count selection.
+>  
+>      <img width="420" alt="image" src="https://github.com/yektaparlak/ICMP-Packet-Watcher/assets/111290340/7df29374-30b9-4283-8935-cc653ee0d7ac">
+>
+>
+>  **2. Error Handling Functions**:
+>   - Declared and defined functions HandleICMPStatus and HandleICMPSendEchoError to manage ICMP response status codes and errors returned by IcmpSendEcho.
+>
+>  **3. Code Structure Improvement**:
+>   - Rearranged code segments for better readability, maintainability, and logical flow.
+>
+>  **4. Improved Commenting**:
+>   - Maintained and improved existing comments to explain the purpose and functionality of code blocks and functions.
+>
+>  **5. Documented Functionality**:
+>   - Documented the functionality of `IcmpCreateFile`, `IcmpCloseHandle`, and `IcmpSendEcho` functions.
 
 <br>
 
@@ -33,16 +34,16 @@ Using the ***Wireshark program***, I conducted a detailed monitoring and analysi
 <br>
 <br>
 
->### To run via CMD for "icmp_Winsock_API.exe" 
->> <table><tr><td> icmp_Winsock_API + DestinationIP (such as icmp_Winsock_API 8.8.8.8) </td></tr></table>
+### To run via CMD for "icmp_Winsock_API.exe" 
+ <table><tr><td> icmp_Winsock_API + DestinationIP (such as icmp_Winsock_API 8.8.8.8) </td></tr></table>
 
 <img src="https://github.com/yektaparlak/ICMP-Packet-Watcher/blob/main/gif_file_2.gif" width="800"/>
 
 
 <br>
 
->### To run via CMD for "icmp_RawSocket.exe"
->> <table><tr><td> icmp_RawSocket + DestinationIP  (such as icmp_RawSocket 8.8.8.8) </td></tr></table>
+### To run via CMD for "icmp_RawSocket.exe"
+ <table><tr><td> icmp_RawSocket + DestinationIP  (such as icmp_RawSocket 8.8.8.8) </td></tr></table>
 
 <img src="https://github.com/yektaparlak/ICMP-Packet-Watcher/blob/main/gif_file_1.gif" width="800"/>
 <br>
